@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Body
 from pydantic import BaseModel
 
 from fastapidesc import description, contract
@@ -12,4 +12,4 @@ app = FastAPI(
 
 @app.post("/message")
 async def send_message(name: str = Body(...), message: str = Body(...)):
-    return {"notification": f"You, {name} succesfully sended the message: {message}"}
+    return {"notification": f"You, {name}, succesfully sended the message: {message}"}
