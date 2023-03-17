@@ -10,6 +10,6 @@ app = FastAPI(
 )
 
 
-@app.post("/message")
+@app.post("/message", tags=['producer'])
 async def send_message(name: str = Body(...), message: str = Body(...)):
     return {"notification": f"You, {name}, succesfully sended the message: {message}"}
