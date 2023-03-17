@@ -9,7 +9,10 @@ app = FastAPI(
     contract=contract,
 )
 
+class Message(BaseModel):
+    name: str
+    message: str
 
 @app.post("/message", tags=['producer'])
-async def send_message(name: str = Body(...), message: str = Body(...)):
-    return {"notification": f"You, {name}, succesfully sended the message: {message}"}
+async def send_message(message: Message = Body(...)):
+    return {"notification": f"You, {message.name}, succesfully sended the message: {message.message}"}
