@@ -5,6 +5,6 @@ This is handmade!
 """
 
 contract = {
-        "name": "Yusuf Uzun",
+        "name": "Beste Gruppe",
         "email": "uzyu1011@h-ka.de"
 }
