@@ -1,34 +1,24 @@
 from confluent_kafka import Consumer
+import logging
 
+logging.info('Connecting to Kafka as Consumer')
 hwConsumer = Consumer({
     'bootstrap.servers': 'localhost:9092',
     'group.id': 'test-consumer-group',
 })
+logging.info('Subscribing to Kafka as Hardware Consumer')
 hwConsumer.subscribe(['hw'])
-""""
-def getHardwareConsumer():
-    while True:
-        msg = hwConsumer.poll(1.0)
 
-        if msg is None:
-            continue
-        if msg.error():
-            print("Consumer Error")
-            continue
-
-        print('Got Message: {}'.format(msg.value().decode('utf-8')))
-
-    hwConsumer.close()
-"""
 while True:
+    logging.info('Getting old messages from hw topic')
     msg = hwConsumer.poll(1.0)
 
     if msg is None:
         continue
     if msg.error():
-        print("Consumer Error")
+        logging.fatal("Consumer Error")
         continue
 
-    print('Got Message: {}'.format(msg.value().decode('utf-8')))
+    logging.info('Got Message: {}'.format(msg.value().decode('utf-8')))
 
 hwConsumer.close()
