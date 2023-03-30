@@ -24,7 +24,7 @@ localhost:9092
 localhost:9092
 
 Man muss hier nicht mehr umbedingt unter C:\Kafka sein
-1. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe 
+1. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/Sprint1/consumer_hw/src/backend_func.py
 2. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe 
 c:/Users/Student/Documents/VSCode/Sprint1/consumer_sw/src/backend_func.py
 3. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe 
