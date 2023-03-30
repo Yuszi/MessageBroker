@@ -16,18 +16,13 @@ Unter C:\kafka :
 3. .\bin\windows\kafka-console-producer.bat --topic hw --bootstrap-server localhost:9092
 4. .\bin\windows\kafka-console-producer.bat --topic sw --bootstrap-server localhost:9092
 5. .\bin\windows\kafka-console-producer.bat --topic zs --bootstrap-server localhost:9092
-6. .\bin\windows\kafka-console-consumer.bat --topic hw --from-beginning --bootstrap-server 
-localhost:9092
-7. .\bin\windows\kafka-console-consumer.bat --topic sw --from-beginning --bootstrap-server 
-localhost:9092
-8. .\bin\windows\kafka-console-consumer.bat --topic zs --from-beginning --bootstrap-server 
-localhost:9092
+6. .\bin\windows\kafka-console-consumer.bat --topic hw --from-beginning --bootstrap-server localhost:9092
+7. .\bin\windows\kafka-console-consumer.bat --topic sw --from-beginning --bootstrap-server localhost:9092
+8. .\bin\windows\kafka-console-consumer.bat --topic zs --from-beginning --bootstrap-server localhost:9092
 
 Man muss hier nicht mehr umbedingt unter C:\Kafka sein
 1. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/Sprint1/consumer_hw/src/backend_func.py
-2. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe 
-c:/Users/Student/Documents/VSCode/Sprint1/consumer_sw/src/backend_func.py
-3. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe 
-c:/Users/Student/Documents/VSCode/MessageBroker/prod_cons/src/backend_func.py
+2. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/Sprint1/consumer_sw/src/backend_func.py
+3. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/MessageBroker/prod_cons/src/backend_func.py
 ```
 ***DAS WARS AUCH SCHON***
