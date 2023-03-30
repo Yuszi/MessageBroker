@@ -31,16 +31,19 @@ def prod_send(msg):
     logging.info('Sending message as Producer to the specific topic after filtering')
 
     # Nachricht muss diese Wörter beinhalten, sonst Exception
-    if 'software' or 'sw' in _msg: 
+
+    if any('sw' or 'software' in _msg for text in _msg): 
         topic = 'sw'
-    elif 'hardware' or 'hw' in _msg:
+    
+    if any('hw' or 'hardware' in _msg for text in _msg):
         topic = 'hw'
-    else:
-        raise Exception()
+
     
     p.produce(topic, msg)
     print(_msg)
     print(topic , " " , msg)
+    topic = ""
+
 
 # Einrichtung des laufenden "Servers"
 while True: 
