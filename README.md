@@ -7,6 +7,7 @@ Das Projekt ist funktioniert **natürlich** erst dann, wenn man ***Kafka*** heru
 und **zs** manuell eingerichtet sein.
 
 *Wenn das gemacht ist, müssen einige Befehle ausgeführt werden*
+
 Als Beispiel, wie es an Yusuf's Rechner funktioniert:
 ```
 Unter C:\kafka :
