@@ -30,4 +30,4 @@ while True:
 
     logging.info('Got Message: {}'.format(msg.value().decode('utf-8')))
 
-hwConsumer.close()
+# hwConsumer.close()
