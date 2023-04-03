@@ -31,11 +31,12 @@ def prod_send(msg):
 
     # Nachricht muss diese Wörter beinhalten, sonst Exception
 
-    if any('sw' or 'software' in _msg for text in _msg): 
-        topic = 'sw'
+    for text in _msg:
+        if text == 'sw' or text == 'software':
+            topic = "sw"
     
-    if any('hw' or 'hardware' in _msg for text in _msg):
-        topic = 'hw'
+        if text == 'hw' or text == 'hardware':
+            topic = "hw"
 
     
     p.produce(topic, msg)
