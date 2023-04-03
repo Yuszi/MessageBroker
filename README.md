@@ -26,4 +26,11 @@ Man muss hier nicht mehr umbedingt unter C:\Kafka sein
 3. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/MessageBroker/prod_cons/src/backend_func.py
 4. C:/Users/Student/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Student/Documents/VSCode/MessageBroker/producer/src/main.py
 ```
+
+Und um Python richtig compilieren zu lassen muss man 
+```
+pip install -r requirements.txt
+```
+ausführen.
+
 ***DAS WARS AUCH SCHON***
