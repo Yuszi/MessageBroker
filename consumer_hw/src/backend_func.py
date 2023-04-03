@@ -12,7 +12,7 @@ hwConsumer = Consumer({
     'group.id': 'test-consumer-group',
 })
 
-# Subscribtion an die Kategorie, damit dieser die Nachricht empfangen kann.
+# Subscription an die Kategorie, damit dieser die Nachricht empfangen kann.
 logging.info('Subscribing to Kafka as Hardware Consumer')
 hwConsumer.subscribe(['hw'])
 

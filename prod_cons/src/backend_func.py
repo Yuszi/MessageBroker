@@ -1,6 +1,5 @@
 from confluent_kafka import Consumer
 from confluent_kafka import Producer
-import enum as Enum 
 import logging
 
 """

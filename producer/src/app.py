@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from backend_func import producerKafkaSend
-from enum import Enum
 
 from fastapidesc import description, contract
 
